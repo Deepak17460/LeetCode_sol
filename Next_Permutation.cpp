@@ -22,3 +22,19 @@ int main() {
 }
 
 // Time Complexity is O(n*n!) & Space Complexity is O(n!),where n is the length of a string
+
+
+// Using inbuilt function
+#include <bits/stdc++.h>
+using namespace std;
+void NextPermutation(string &str){
+	sort(str.begin(),str.end());
+	do{
+		cout<<str<<" ";
+	}while(next_permutation(str.begin(),str.end()));
+}
+int main() {
+	string str;
+	cin>>str;
+    NextPermutation(str);
+}
